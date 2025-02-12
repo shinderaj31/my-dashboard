@@ -1,0 +1,95 @@
+/* File: src/styles/MainLayout.css */
+:root {
+    --primary-color: #4f46e5;
+    --sidebar-bg: #1e1e2d;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    margin: 1rem;
+    gap: 1rem;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  /* Add to src/styles/MainLayout.css */
+.dashboard-header {
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .dashboard-subtitle {
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+    margin: 0.5rem 0;
+  }
+  
+  .stat-change {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .stat-change.positive {
+    background-color: #dcfce7;
+    color: #15803d;
+  }
+  
+  .stat-change.negative {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
